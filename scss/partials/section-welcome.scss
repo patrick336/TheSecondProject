@@ -1,0 +1,105 @@
+// ##### SECTION WELCOME #####
+
+.welcome {
+  min-height: 600px;
+  background: #fff url("../images/room.jpg") center/cover no-repeat fixed;
+  color: #fff;
+  padding-top: 62px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+
+  h1 {
+    font-size: 18px;
+    font-weight: 500;
+    min-height: 50px;
+    margin: 0;
+
+    @media #{$XS} {
+      font-size: 20px;
+    }
+    @media #{$S} {
+        font-size: 22px;
+    }
+    @media #{$M} {
+      font-size: 24px;
+    }
+    @media #{$L} {
+      font-size: 26px;
+    }
+    @media #{$XL} {
+      font-size: 28px;
+    }
+  }
+
+  p {
+    font-size: 14px;
+    @media #{$XS} {
+      font-size: 16px;
+    }
+    @media #{$S} {
+        font-size: 18px;
+    }
+    @media #{$M} {
+      font-size: 20px;
+    }
+    @media #{$L} {
+      font-size: 22px;
+    }
+    @media #{$XL} {
+      font-size: 24px;
+    }
+  }
+}
+
+.form-wrapper {
+  margin-top: 40px;
+  p {
+    margin: 0;
+  }
+}
+.coins {
+  height: 28px;
+  margin-right: 6px;
+}
+.bedrooms {
+  @extend .coins;
+}
+
+.btn-search {
+  margin: 25px 0 0px;
+  background: #ff5219;
+  color: #fff;
+  border-radius: 15px;
+  font-size: 20px;
+  padding: 15px 20px;
+
+  i.fa {
+    margin-right: 10px;
+  }
+}
+
+.number-room {
+  min-width: 200px;
+  max-width: 426px;
+  width: 100%;
+  padding: 5px 10px;
+  height: 58px;
+  border-radius: 15px;
+  color: #6c6c6c;
+  margin: 15px 0;
+  outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  background: #fff url("../images/down-arrow.png") no-repeat right 10px center;
+  background-size: 20px;
+}
+
+.price {
+  @extend .number-room;
+}

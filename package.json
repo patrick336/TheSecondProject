@@ -1,0 +1,16 @@
+{
+  "name": "Project2",
+  "version": "1.0.0",
+  "description": "\"The second project\"",
+  "main": "index.js",
+  "author": "patryk_test <p.kalinowski.93@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^2.18.8",
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-cssmin": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0"
+  }
+}

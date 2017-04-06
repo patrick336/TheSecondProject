@@ -1,0 +1,111 @@
+@mixin transform($transforms) {
+    -moz-transform: $transforms;
+    -o-transform: $transforms;
+    -ms-transform: $transforms;
+    -webkit-transform: $transforms;
+    transform: $transforms;
+}
+
+@mixin trans($property, $duration, $effect) {
+    -ms-transition:  $property $duration $effect;
+    -o-transition: $property $duration $effect;
+    -moz-transition: $property $duration $effect;
+    -webkit-transition: $property $duration $effect;
+    transition: $property $duration $effect;
+}
+
+@mixin borderRadius ($icon-radius) {
+    -webkit-border-radius: $icon-radius;
+    -moz-border-radius: $icon-radius;
+    -ms-border-radius: $icon-radius;
+    border-radius: $icon-radius;
+}
+
+@mixin boxShadow ($horizontal, $vertical, $blur, $spread, $opacity) {
+    -webkit-box-shadow: $horizontal $vertical $blur $spread $opacity;
+    -moz-box-shadow: $horizontal $vertical $blur $spread $opacity;
+    box-shadow: $horizontal $vertical $blur $spread $opacity;
+}
+
+
+// mixins for flexbox
+
+@mixin display-flex() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin center-flex () {
+	-webkit-box-pack: center;
+    -moz-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+@mixin row-flex ($row-choice){
+   -webkit-flex-wrap: $row-choice;
+    -ms-flex-wrap: $row-choice;
+    flex-wrap: $row-choice;
+}
+
+@mixin direction-flex ($direction-choice) {
+	-webkit-flex-direction: $direction-choice;
+    -ms-flex-direction: $direction-choice;
+    flex-direction: $direction-choice;
+}
+
+@mixin justify-flex ($justify-choice) {
+   justify-content: $justify-choice;
+    -webkit-align-content: $justify-choice;
+    -ms-flex-line-pack: $justify-choice;
+}
+
+@mixin align-flex ($align-flex-choice) {
+	-webkit-align-items: $align-flex-choice;
+    -ms-flex-align: $align-flex-choice;
+    align-items: $align-flex-choice;
+}
+	
+@mixin order-flex ($order-flex)  {
+	-webkit-order: $order-flex;
+    -ms-flex-order: $order-flex;
+    order: $order-flex;
+}
+
+//centering block
+
+@mixin center($position) {
+  position: absolute;
+ 
+  @if $position == 'vertical' {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  @else if $position == 'horizontal' {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translate(-50%);
+  }
+  @else if $position == 'both' {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}

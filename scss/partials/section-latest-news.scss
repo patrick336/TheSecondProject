@@ -1,0 +1,87 @@
+.latest-news {
+  .top-content {
+
+    color: #fff;
+    position: relative;
+    background: #3498db url("../images/latest-news/latest-news75.jpg") center/cover no-repeat;
+    height: 160px;
+
+    @media #{$M} {
+      height: 320px;
+    }
+
+    .text-wrapper {
+      @include center(both);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 24px;
+      margin: 0;
+    }
+
+    .layer {
+      background-color: rgba(52,152,219,0.6);
+    }
+  }
+  .down-content {
+    padding: 20px 0;
+  }
+}
+
+figure {
+  border: 1px solid red;
+  max-width: 426px;
+  margin: 20px auto;
+
+  h5 {
+    color: #ff5219;
+    margin: 15px 0;
+    font-size: 15px;
+
+    @media #{$XS} {
+      font-size: 16px;
+    }
+    // @media #{$L} {
+    //   font-size: 17px;
+    // }
+    @media #{$L} {
+      font-size: 18px;
+    }
+  }
+
+  h3 {
+    color: #000;
+    font-size: 19px;
+    margin: 0;
+    height: 70px;
+    border: 1px solid;
+
+    @media #{$XS} {
+      font-size: 20px;
+    }
+    // @media #{$L} {
+    //   font-size: 21px;
+    // }
+    @media #{$XL} {
+      font-size: 22px;
+    }
+  }
+  p {
+
+    color: #898989;
+    font-size: 11px;
+    height: 80px;
+    padding: 5px 0;
+
+    @media #{$XS} {
+      font-size: 12px;
+    }
+    // @media #{$L} {
+    //   font-size: 13px;
+    // }
+    @media #{$XL} {
+      font-size: 14px;
+    }
+  }
+}

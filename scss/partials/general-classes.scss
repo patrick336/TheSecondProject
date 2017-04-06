@@ -1,0 +1,48 @@
+
+
+body {
+  font-family: "Poppins",sans-serif;
+}
+
+
+// PATTERN
+
+.pattern  {
+	margin: 15px auto;
+	display: block ;
+	width: 63px;
+	position: relative;
+	height: 9px;
+	overflow: hidden;
+
+  @media #{$M} {
+    margin: 30px auto;
+  }
+}
+.circle {
+	width: 9px ;
+	height: 9px ;
+	border-radius: 100%;
+	position: absolute;
+}
+.circle-1  {
+	left: 12px;
+   background: #0c123c;
+}
+.circle-2  {
+	left: 27px ;
+	right: 27px;
+	background: #ff5219;
+}
+.circle-3  {
+	right: 12px;
+	background: #3498db;
+}
+
+.layer {
+  position: absolute;
+  top: 0;
+  left:0;
+  right: 0;
+  bottom: 0;
+}

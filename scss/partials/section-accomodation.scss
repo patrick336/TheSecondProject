@@ -1,0 +1,143 @@
+.accomodation {
+
+	.container {
+		border: 1px solid orange; //roboczo
+	}
+
+	padding: 55px 0;
+}
+.top-wrapper {
+
+	 h1 {
+		  font-size: 20px;
+		  text-align: center;
+		  margin: 0;
+	 }
+}
+.image-wrapper {
+	position: relative;
+	height: 268px;
+	background: #ebebeb center/cover no-repeat;
+
+	 .tag {
+		  position: absolute;
+		  text-align: center;
+		  text-transform: uppercase;
+		  background:  #0c123c;
+		  color: #fff;
+		  top: 10px;
+		  padding: 10px 20px;
+		  border-top-right-radius: 25px;
+		  border-bottom-right-radius: 25px;
+		  left: -10px;
+		  font-size: 16px;
+		  line-height: 20px;
+	 }
+}
+.acc-1 {
+   background-image: url("../images/accomodation/acc-1.jpg");
+}
+.acc-2 {
+   background-image: url("../images/accomodation/acc-2.jpg");
+}
+.acc-3 {
+  background-image: url("../images/accomodation/acc-3.jpg");
+}
+
+.hotel-wrapper {
+  border: 1px solid red;
+  margin: 20px auto;
+}
+
+.description {
+
+  h6 {
+    display: block;
+    border: 1px solid gray;
+    margin: 10px 0;
+
+    font-size: 12px;
+
+    // font-size: 14px;
+  }
+	 h3 {
+      margin: 10px 0;
+		  line-height: 24px;
+      border: 1px solid red;
+
+      font-size: 22px;
+      // font-size: 24px;
+	 }
+
+  span {
+    float: right;
+  }
+
+}
+
+.info-rooms {
+  p {
+    border: 1px solid pink;
+    margin: 5px 0;
+    max-width: 200px;
+    // height: 40px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+
+    font-size: 14px;
+  }
+}
+
+.equipment {
+  margin: 15px 0;
+
+  img {
+     display: inline-block;
+     margin-right: 8px;
+
+     max-height: 18px;
+    //  max-height: 20px;
+  }
+}
+
+.btn-view-details {
+  background: #ff5219;
+  color: #fff;
+  border-radius: 15px;
+  padding: 8px 15px;
+  font-size: 14px;
+}
+
+.details-more {
+  margin-top: 5px;
+  // @include display-flex();
+  // @include justify-flex(space-between);
+
+  h4 {
+    color: #ff5219;
+    float: left;
+
+    font-size: 18px;
+    //font-size: 20px;
+  }
+  a.btn-view-details {
+    float: right;
+  }
+}
+
+#js-map {
+  // height: calc(3*268px);
+}
+
+.btn-view-all {
+  margin: 50px auto 0;
+  border-radius: 15px;
+  background: #ebebeb;
+  padding: 10px;
+  color: #000;
+  display: block;
+  width: 100%;
+  max-width: calc(8.33% *6);
+  min-width: 300px;
+}
